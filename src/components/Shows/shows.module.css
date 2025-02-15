@@ -1,0 +1,51 @@
+.shows{
+ width: 100%;
+ /* background-color: red; */
+ padding: 10px 3%;
+ position: relative;
+}
+
+.Showparent{
+    margin: 10px 0px;
+    width: 100%;
+    display: flex;
+    /* background-color: blue; */
+    justify-content: space-between;
+   
+}
+
+
+.buttons{
+    position: absolute;
+    padding: 0px 25px;
+    top: 20px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items:center;
+    justify-content: space-between;
+    opacity: 0%;
+    cursor: pointer;
+    
+}
+
+.shows:hover .buttons{
+    opacity: 80%;
+    transition: 1s;
+}
+
+.shade{
+    position: absolute;
+    inset: 0;
+    background:radial-gradient(circle, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.9) 100%);
+    opacity: 0%;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; 
+    z-index: 20;
+}
+
+.shows:hover .shade{
+    opacity: 100%;
+}
+

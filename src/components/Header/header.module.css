@@ -1,0 +1,167 @@
+.header{
+    width: 100%;
+    height: 70px;
+    padding: 0px 50px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(41 35 36);
+    position: fixed;
+    z-index: 40;
+
+}
+.navbar{
+    width: fit-content;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: white;
+}
+.logo{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    column-gap: 14px;
+    color: white;
+}
+
+.premiumbutton{
+    width: fit-content;
+    padding: 5px 16px ;
+    background-color: transparent;
+    border:2px solid #c1a362;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #c1a362;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    position: relative;
+}
+
+
+.navlinks{
+    width: fit-content;
+    display: flex;
+    list-style-type: none;
+    column-gap: 20px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(164 169 177);
+}
+
+.navlink:hover{
+    color: white;
+}
+
+
+.navlink::after{
+  content: "";
+  
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  border-radius: 20px;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(217 0 141);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.active {
+    position: relative;
+    font-weight: bold;
+    color: white;
+  }
+  
+.active::after {
+    transform: scale(1);
+}
+
+
+
+.search{
+width: 30%;
+/* height: 70px; */
+/* background-color: navy; */
+display: flex;
+align-items:center;
+justify-content: center;
+column-gap: 20px;
+}
+
+
+.searchbox{
+    width: fit-content;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255,20%);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 0px 10px;
+    column-gap: 15px;
+}
+
+.input{
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    font-weight:var(--fw-medium);
+    font-size: 16px;
+}
+
+.input::placeholder{
+    color: white;
+    opacity : 30%;
+}
+
+.headericon{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headericon:hover{
+cursor: pointer;
+ background-color:  rgb(255, 255, 255,30%);
+ border-radius: 50%;
+}
+
+
+.usericon{
+    width: fit-content;
+    height: 40px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+.usericon:active{
+    transform: scale(-1);
+}
+
+
+ .searchInput{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(50, 47, 47, 0.5);
+    position: fixed;
+    z-index: 30; 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 equal columns */
+    gap: 10px;
+    padding:5% 2%;
+    
+}
+

@@ -1,0 +1,12 @@
+.channels{
+    width: 100%;
+    padding: 10px 2%;
+
+    display: flex;
+    column-gap: 10px;
+}
+
+.channel{
+    border-radius: 10px;
+    height: 120px;
+}
